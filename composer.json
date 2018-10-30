@@ -1,0 +1,14 @@
+{
+    "name": "compralo/compralo-php",
+    "description": "Compralo PHP Library",
+    "license": "MIT",
+    "keywords": ["compralo", "checkout", "crypto", "bitcoin", "ethereum", "intertradec"],
+    "homepage": "https://compralo.com.br",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+    		"classmap": ["lib/"]
+    }
+}
