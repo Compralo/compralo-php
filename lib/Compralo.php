@@ -14,7 +14,7 @@ class Compralo {
         $this->apiKey = $apiKey;
     }
 
-    public function create($store_name, $value, $description, $postback_url){
+    public function create($store_name, $value, $description, $postback_url, $back_url=null){
 
         $data = json_encode([
             'api_key' => $this->apiKey,
@@ -22,6 +22,7 @@ class Compralo {
             'store_name' => $store_name,
             'postback_url' => $postback_url,
             'description' => $description,
+            'back_url' => $back_url,
         ]);
 
         $curl = curl_init();
@@ -49,7 +50,7 @@ class Compralo {
           return "cURL Error #:" . $err;
         } else {
             $response_data = json_decode($response);
-            return $response;
+            return $response_data;
         }
 
     }
