@@ -28,7 +28,7 @@ class Compralo {
       $curl = curl_init();
 
       curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://app.compralo.com.br/api/v1/seller/generateInvoice",
+        CURLOPT_URL => "https://app.compralo.io/api/v1/seller/generateInvoice",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -60,7 +60,7 @@ class Compralo {
       $curl = curl_init();
 
       curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://app.compralo.com.br/api/v1/seller/checkStatus/".$checkout_token,
+        CURLOPT_URL => "https://app.compralo.io/api/v1/seller/checkStatus/".$checkout_token,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -105,7 +105,7 @@ class Compralo {
       $curl = curl_init();
 
       curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://app.compralo.com.br/api/v1/withdrawal/create",
+        CURLOPT_URL => "https://app.compralo.io/api/v1/withdrawal/create",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
